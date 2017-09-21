@@ -1,0 +1,15 @@
+#Unignore files named Makefile ande makefile
+!Makefile
+!makefile
+
+#Unignore all with extensions
+!*.*
+
+#Unignore all directories
+!*/
+
+#Ignore geany script
+geany_run_script.sh
+
+#Ignore object files
+*.o
