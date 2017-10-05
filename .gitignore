@@ -1,4 +1,4 @@
-#Unignore files named Makefile ande makefile
+#Unignore files named Makefile and makefile
 !Makefile
 !makefile
 
