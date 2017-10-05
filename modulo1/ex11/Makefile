@@ -4,7 +4,7 @@ exercicio11: main.o palindrome.o
 main.o: main.c
 	gcc -Wall -c main.c -o main.o
 
-sort_without_reps.o: palindrome.c
+palindrome.o: palindrome.c
 	gcc -Wall -c palindrome.c -o palindrome.o	
 
 run: exercicio11

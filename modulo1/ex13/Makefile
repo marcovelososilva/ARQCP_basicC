@@ -1,12 +1,14 @@
-mygame: main.o palindrome.o
-	gcc -Wall main.o palindrome.o -o exercicio11
+exercicio13: main.o foundwhere.o
+	gcc -Wall main.o foundwhere.o -o exercicio13
 
 main.o: main.c
 	gcc -Wall -c main.c -o main.o
 
-sort_without_reps.o: palindrome.c
-	gcc -Wall -c palindrome.c -o palindrome.o	
+foundwhere.o: foundwhere.c
+	gcc -Wall -c foundwhere.c -o foundwhere.o	
 
-run: exercicio11
-	./exercicio11
+run: exercicio13
+	./exercicio13
 
+clean: *.o
+	rm *.o

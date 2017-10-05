@@ -6,7 +6,7 @@ function.
 */
 
 #include <stdio.h>
-
+#include "swap.h"
 
 int main()
 {
@@ -17,19 +17,20 @@ int main()
 	int *vec2;
 	vec1=&vector1[0];
 	vec2=&vector2[0];
+	/*
+	 Get size
+	 */
 	int size=sizeof(vector1)/sizeof(vector1[1]);
 
-	/*
-	 * funcao para trocar os vetores
-	 */
-	int temp; 
+	swap(vec1,vec2,size);
+	printf("New Vector 1\n");
 	for (i=0;i<size;i++){
-		temp=*(vec1+i);
-		*(vec1+i)=*(vec2+i);
-		*(vec2+i)=temp;
+			printf("%d \n",*(vec1+i));
 	}
+	
+	printf("New Vector 2\n");
 	for (i=0;i<size;i++){
-			printf("%d",*(vec2+i));
+			printf("%d \n",*(vec2+i));
 	}
 	
 	
