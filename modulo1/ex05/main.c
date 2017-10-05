@@ -4,14 +4,20 @@
  */
 
 #include <stdio.h>
+#include "transformation.h"
 
 int main()
 {
 
-	char a[4]= "oioi";
-	printf("size %d\n", sizeof a);
-	char
-	printf("ola %c\n",a[0]);
+	char string[4]={"ola"};
+	char *addressString;
+	addressString=&string[0];
+	transformation(addressString);
+	
+	while (*addressString!='\0'){
+		printf(" %c \n",*addressString);
+		addressString++;
+	}
 	return 0;
 }
 
