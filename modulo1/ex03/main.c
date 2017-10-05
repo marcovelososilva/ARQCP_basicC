@@ -12,9 +12,9 @@ int main()
 	int vec[] = {10,11, 12, 13, 14, 15,16,17,18,19,20};
 	int *xPtr;
 	xPtr=vec;
-	printEvenNumbersArray(xPtr);
-	int b = sizeof xPtr;
-	printf("ola %d\n",b);
+	int size=(sizeof vec)/(sizeof vec[0]);
+	printEvenNumbersArray(xPtr, size);
+
 	return 0;
 }
 
