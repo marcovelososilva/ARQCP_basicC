@@ -1,4 +1,4 @@
-mygame: main.o palindrome.o
+exercicio11: main.o palindrome.o
 	gcc -Wall main.o palindrome.o -o exercicio11
 
 main.o: main.c
@@ -10,3 +10,5 @@ sort_without_reps.o: palindrome.c
 run: exercicio11
 	./exercicio11
 
+clean: *.o
+	rm *.o

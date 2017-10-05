@@ -8,11 +8,9 @@ int palindrome(char *src)
 * 	 */
 	int length=0;
 	while( *(src+length)!=*("")) {
-		printf("value of a: %c\n", *(src+length));
 		length++;
 	}
-	printf("o tamanho %d",length);
-	
+
 	/*
 	 * funcao para tirar os espaços
 	 */
@@ -28,23 +26,26 @@ int palindrome(char *src)
 			n++;
 		}
     }
-    int y;
-    for (y=0;y<n;y++){
-		printf("valor xx - %c \n",*(tempCharPtr+y));
-	}
+
 	/*
-	funcao para passar para minusculas
+	funcao para passar para maiusculas
 	 */
-	
+	int y=0;
+	for (y=0;y<n;y++){
+		if (*(tempCharPtr+y)>96 && *(tempCharPtr+y)<123){
+			*(tempCharPtr+y)=*(tempCharPtr+y)-32;
+		}
+	}
+
 	/*
 	 funcao para ver se e palindrome 
 	*/
 	int b=0;
-	for (b=0;b<n/2;b++){
-		if (*(tempCharPtr+b)!=*(tempCharPtr-b+n)){
-			return 0;
+	for (b=0;b<n-1;b++){
+		if (*(tempCharPtr+b)!=*(tempCharPtr-b+n-1)){
+			return 1;
 		}
 	}
-	return 1;
+	return 0;
 }
 

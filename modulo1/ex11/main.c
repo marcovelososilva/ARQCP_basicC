@@ -24,10 +24,11 @@ int main()
 	str=&vec[0];
 	int value;
 	value=palindrome(str);
+	printf("\nValue -  %d \n", value);
 	if (value==0){
-		printf("e palindrome");
+		printf("It is a Palindrome\n");
 	}else{
-		printf("nao e palindrome");
+		printf("It is not a palindrome\n");
 	}
 	return 0;
 }

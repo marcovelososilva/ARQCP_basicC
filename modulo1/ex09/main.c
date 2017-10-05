@@ -14,7 +14,7 @@ main function.
 int main()
 {
 
-	int vec[] = {1,2,3,4,5,1,3,2,4,6,7};
+	int vec[] = {1001,2,3,4,5,1,1,1000,19,3,2,4,6,7};
 	int *src;
 	int g;
 	src=&vec[0];
@@ -22,12 +22,10 @@ int main()
 	int newVec[n];
 	int *dest;
 	dest=&newVec[0];
-	printf("size%d",n);
-	
-	
+
 	int nsv=sort_without_reps(src, n, dest);
 	printf("valores repetidos - %d\n", nsv);
-	printf("retirar os copiados\n");
+	printf("Array without duplicated values and with ascending values\n");
 	for (g=0;g<n-nsv;g++){
 		printf("valor %d\n",*(dest+g));
 	}
