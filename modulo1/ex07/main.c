@@ -6,22 +6,20 @@ be printed in the main function.
  */
 
 #include <stdio.h>
+#include "array_sort.h"
 
 int main()
 {
 
 	int vec[] = {10,12, 11, 13,9,14,16,27,8,21,20};
-	int *xPtr;
-	xPtr=vec;
-	int sizeVec=(sizeof vec)/(sizeof vec[0]);
-	printf ("size %d\n",sizeVec);
-	printf ("ola %d\n",*(xPtr+1));
-	int i=0;
-	for (i=0;i<sizeVec;i++){
-		if (*(xPtr)>*(xPtr+1+i)){
-			
-			printf ("yes");
-		}
+	int *vecPTR;
+	vecPTR=&vec[0];
+	int n=(sizeof vec)/(sizeof vec[0]);
+	array_sort(vecPTR,n);
+	int i;
+	printf("Ascending Array Sorted\n");
+	for (i=0;i<n;i++){
+		printf("numero - %d - %d\n",i, *(vecPTR+i));
 	}
 	return 0;
 }
