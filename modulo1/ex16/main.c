@@ -11,7 +11,7 @@ The function should return a pointer to the beginning of the first
 int main ( ) {
 	//initialize variable
 	char str1 [4] = {"wza"};
-	char str2 [8] = {"ywzabcp"};
+	char str2 [8] = {"wwwzacp"};
 	char *result;
 	//call function
 	result = where_exists(&str1[0], &str2[0]);

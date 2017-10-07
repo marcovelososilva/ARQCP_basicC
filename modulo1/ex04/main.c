@@ -12,8 +12,8 @@ int main (){
 	printf("\n EXERCISE 04:\nPlease the word should be transformed:\t(255 characters max...)\n");
 	scanf("%s", word);
 	//send the string to the funtion to be transformed
-	transformation (&word[0]);
-	//print que new string without UPPERCASES on it
+	transformation (word);
+	//print que new string without lowercases on it
 	printf("The new string without UPPERCASES is: %s\n", word);
 	printf("\nTHANKS\n");
 	return 0;

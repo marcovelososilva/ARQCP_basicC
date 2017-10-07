@@ -7,7 +7,7 @@ char* where_exists(char* str1, char* str2){
 	while (*str2 != '\0'){
 		if (*inistr1 != '\0'){
 			if ( *inistr1 == *str2 ){
-				if (bool == 0){
+			 	if (bool == 0){
 					start = str2;
 				}
 				inistr1++;
@@ -17,7 +17,7 @@ char* where_exists(char* str1, char* str2){
 				bool = 0;
 				start = NULL;
 				inistr1 = str1;
-				str2++;
+				//str2++;
 			}
 		}else{
 			return start;
