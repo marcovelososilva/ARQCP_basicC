@@ -8,10 +8,10 @@ void array_sort(int *vecPTR, int n)
 	int temp;
 	for (i=0;i<n;i++){
 		for (k=0;k<n;k++){
-			if (*(vecPTR+i)<*(vecPTR+k)){			
-				temp=*(vecPTR+k);
-				*(vecPTR+k)=*(vecPTR+i);
-				*(vecPTR+i)=temp;
+			if (vecPTR[i]<vecPTR[k]){			
+				temp=vecPTR[i];
+				vecPTR[i]=vecPTR[k];
+				vecPTR[k]=temp;
 			}
 		}
 	}
