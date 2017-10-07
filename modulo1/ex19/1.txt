@@ -1,3 +1,0 @@
-gcc -Wall -c find_word.c -o find_word.o
-gcc -Wall main.o find_word.o -o exercicio19
-./exercicio19

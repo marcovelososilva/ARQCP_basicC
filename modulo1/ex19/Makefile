@@ -1,5 +1,3 @@
-default: run
-
 exercicio19: main.o find_word.o
 	gcc -Wall main.o find_word.o -o exercicio19
 
@@ -11,3 +9,6 @@ find_word.o: find_word.c
 
 run: exercicio19
 	./exercicio19
+
+clean: *.o
+	rm *.o

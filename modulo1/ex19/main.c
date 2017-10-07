@@ -11,20 +11,16 @@ which the search should be initiated.
 
 int main()
 {
-	char wordfull[3]={"ola"};
-	char strings[13]={"pdfoaaeefolae"};
+	char word[4]={"ola"};
+	char str[14]={"pdfoaaeefplae"};
 	
-	char *str;
-	char *word;
 	char *initial_add;
-	char *find;
-	str=&strings[0];
-	word=&wordfull[0];
-	printf("word %c \n",*(word+4));
-	initial_add=&strings[5];
-		printf("s \n");
-	find=find_word(str,word,initial_add);
-		printf("\n s");
+	initial_add=&str[2];
+	
+	printf("inicio \n");
+
+	char *as=find_word(str,word,initial_add);
+	printf("\n word - %p",as);
 	return 0;
 }
 
