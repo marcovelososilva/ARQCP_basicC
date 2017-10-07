@@ -11,40 +11,23 @@ functions:
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "fillRandomValues.h"
+#include "numSets.h"
 
 int main()
 {
+
 	int vetor[100];
-	int i=0;
 	int *vetorPTR;
 	vetorPTR=&vetor[0];
 
-	/*
-	 * funcao para gerar 100 numeros aleatorios
-	 */
-	while(i<100){
-		printf("%d",i);
-		*(vetorPTR+i)=rand() %20;
-		i++;
-	}
+	fillRandomValues(vetorPTR);
+
+	int sets;
+	int *setsPtr;
+	setsPtr=&sets;
+	numSets(vetor,setsPtr);
 	
-	
-	/*
-	 * criar uma funcao para ver se os tres inteiros sao seguidos ou nao
-	 */ 
-	 
-	/*
-	 * funcao para ver se existem tres numeros consecutivos
-	 */
-	
-	
-	while(i<3){
-		if (*(vetorPTR+i)-*(vetorPTR+i+1)==1){
-			if (*(vetorPTR+i+1)-*(vetorPTR+i+2)==1){
-					return 1;
-			}
-		}
-	}
 	
 	return 0;
 }
