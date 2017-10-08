@@ -1,4 +1,4 @@
-#makefile EXERCICE 04
+#makefile EXERCICE02
 default: run
 
 inputVec : main.o input_vec.o

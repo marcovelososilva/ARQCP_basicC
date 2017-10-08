@@ -7,40 +7,22 @@ of the word found in str. Ensure that the array addrs has enough
 space to accommodate all the possible addresses.*/
  
 #include <stdio.h>
-#include "compress.h"
+#include "find_all_words.h"
+#define n 38
+int main()
+{
 
-int main (){
-	//inicialize the variables
-	int n_shorts = 10;
-	short shorts[10] = { 10, 12, 13,15,17,9,7,81,93,2};
-	int integers[5];
-	
-	
-	//call funtion
-	compress_shorts (shorts, n_shorts, integers);
-	
-	//print the shorts
-	int i;
-	printf("THE SHORTS ARRAY\n");
-	for (i = 0; i < n_shorts; i++){
-		printf("%d \t", shorts[i]);
-	} 
-	//print the integers
-	int j;
-	printf("\nTHE INTEGERS ARRAY as integers\n");
-	for (j=0; j<5; j++){
-		printf ("%d\n", integers[j]);
-	}
-	int k = 0;
-	printf("\nTHE INTEGERS ARRAY as shorts\n");
-	short *printintegers = (short *) integers;
-	while (k < n_shorts){
-		printf ("%d\n", *printintegers);
-		k++;
-		printintegers++;
-	}
-	
-	printf("\nTHANK YOU");
+	char word[4]={"ola"};
+	char str[38]={"polafoaaeefplolakolahgolaaedhdholatjz"};
+	char *addrs[38];
+	printf("xx");
+	find_all_words(str,word,addrs);
+	/*int i;
+	for (i=0;**addrs!=0;i++){
+		printf("xxx-> %c",**addrs);
+	}*/
 	
 	return 0;
 }
+
+

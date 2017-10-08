@@ -43,9 +43,9 @@ int palindrome(char *src)
 	int b=0;
 	for (b=0;b<n-1;b++){
 		if (*(tempCharPtr+b)!=*(tempCharPtr-b+n-1)){
-			return 1;
+			return 0;
 		}
 	}
-	return 0;
+	return 1;
 }
 

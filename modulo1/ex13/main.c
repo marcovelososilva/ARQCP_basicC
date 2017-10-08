@@ -37,7 +37,7 @@ int main()
 	int i;
 	printf("the position(s) of the found character were: \n");
 	for (i=0;i<encontrou;i++){
-		printf("Position - %d\n",*(vecPtr+i));
+		printf("Position - %d\n",*(vecPtr+i+1));
 	}
 	return 0;
 }

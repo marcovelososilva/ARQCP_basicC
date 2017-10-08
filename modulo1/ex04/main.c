@@ -14,7 +14,7 @@ int main (){
 	//send the string to the funtion to be transformed
 	transformation (word);
 	//print que new string without lowercases on it
-	printf("The new string without UPPERCASES is: %s\n", word);
+	printf("The new string without lowercases is: %s\n", word);
 	printf("\nTHANKS\n");
 	return 0;
 }

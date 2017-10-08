@@ -10,3 +10,6 @@ printStuff.o: printStuff.c
 run: exercicio3
 	./exercicio3
 
+clean: *.o
+	rm *.o
+	rm exercicio3

@@ -1,5 +1,5 @@
 #makedir EXERCIO 08
-default:
+default: run
 	run
 
 exercicio08: main.o array_sort_pointer.o
@@ -15,4 +15,4 @@ run: exercicio08
 	./exercicio08
 
 clean: *.o
-	rm *.o exercio08
+	rm *.o exercicio08

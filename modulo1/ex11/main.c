@@ -19,13 +19,13 @@ Examples:
 int main()
 {
 	
-	char vec[] = {"Never odd or even"};
+	char vec[] = {"Never odwd or evwen"};
 	char *str;
 	str=&vec[0];
 	int value;
 	value=palindrome(str);
 	printf("\nValue -  %d \n", value);
-	if (value==0){
+	if (value==1){
 		printf("It is a Palindrome\n");
 	}else{
 		printf("It is not a palindrome\n");

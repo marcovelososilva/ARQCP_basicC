@@ -31,7 +31,7 @@ int main (){
 	int sum;
 	sum = even_sum (&x[0]);
 	//print the anwser
-		printf("the sum of all even numbers introduce was: %i\n", sum);
+		printf("the sum of all even elements that were introduced was: %i\n", sum);
 		printf("THANK YOU\n");
 	return 0;
 }
