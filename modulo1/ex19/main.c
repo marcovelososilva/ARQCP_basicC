@@ -12,7 +12,7 @@ which the search should be initiated.
 int main()
 {
 	char word[4]={"ola"};
-	char str[14]={"pdfoaaeefplae"};
+	char str[14]={"pdfolaeefplae"};
 	
 	char *initial_add;
 	initial_add=&str[2];
@@ -21,6 +21,7 @@ int main()
 
 	char *as=find_word(str,word,initial_add);
 	printf("\n word - %p",as);
+	printf ("\n%s",as);
 	return 0;
 }
 
